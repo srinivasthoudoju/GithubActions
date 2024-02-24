@@ -10,4 +10,7 @@ jobs:
       - name: Hello World
         run: echo "Hello World"
       - name: Index.html content
-        run: cat Index.html
+        run: |
+          cat "Index.html"
+          cat "Courses.html"
+          echo "The main.yml workflow successfully executed"
