@@ -12,7 +12,6 @@ jobs:
  - name: Print value of Variable
  run: |
  echo "Value of Greeting is: ${{ env.Greeting }}"
- echo "Value of Greeting is: $Greeting"
  echo "Value of Repo Variable is: ${{ vars.REPO_VARIABLE1 }}"
  
  - name: "Say Hello, it's Monday"
