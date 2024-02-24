@@ -14,3 +14,7 @@ jobs:
           cat "Index.html"
           cat "Courses.html"
           echo "The main.yml workflow successfully executed"
+      - name: Running Cron Jobs
+      
+          schedule:
+            -cron:'15 18 * * *'
