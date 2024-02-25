@@ -1,5 +1,5 @@
 name:Github Actions Demo
-run-name:${{ github.actior }} is running our GitHUb Actions
+run-name:${{ github.actor }} is running our GitHUb Actions
 on:
  workflow_dispatch:
 jobs:
