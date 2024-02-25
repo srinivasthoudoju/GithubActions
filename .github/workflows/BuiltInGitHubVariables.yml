@@ -1,11 +1,13 @@
 name: Github Actions Demo
 run-name: ${{ github.actor }} is running our GitHUb Actions
+
 on:
  workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+    - run: echo "The job is trrigered by ${{ github.actor }}"
     - run: echo "The job was automatically Triggered by ${{ github.event_name}} event"
     - run: echo "This job is now running on a ${{ runner.os}} server hosted by GitHub"
     - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
